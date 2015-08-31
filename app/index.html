@@ -1,0 +1,50 @@
+<!doctype html>
+<html class="no-js">
+<head>
+	<meta charset="utf-8">
+	<title></title>
+	<meta name="description" content="">
+	<meta name="viewport" content="width=device-width">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+	<link rel="stylesheet" href="styles/main.css">
+</head>
+
+<body ng-app="angNewsApp">
+	<!--[if lt IE 7]>
+	  <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+	  <![endif]-->
+
+	  <!-- Add your site or application content here -->
+	  <div ng-include="'views/nav.html'"></div>
+	  <div class="container" ng-view=""></div>
+
+	<!-- App required JS files -->
+	<script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.4/angular.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+	<script src="https://code.angularjs.org/1.4.4/angular-cookies.min.js"></script>
+	<script src="https://code.angularjs.org/1.4.4/angular-resource.min.js"></script>
+	<script src="https://code.angularjs.org/1.4.4/angular-route.min.js"></script>
+	<script src="https://code.angularjs.org/1.4.4/angular-sanitize.min.js"></script>
+	<script src="https://cdn.firebase.com/js/client/2.0.5/firebase.js"></script>
+	<script src="https://cdn.firebase.com/libs/angularfire/0.9.1/angularfire.min.js"></script>
+	<script src="https://cdn.rawgit.com/anonymous/f66c44428951320b78b2/raw/70a94147855e2a78a77fcade81f6f9e2346f791f/firebase-simple-login.js"></script>
+	<!-- App required JS files end here -->
+
+	<!-- User generated JS-->
+	<script src="scripts/app.js"></script>
+	<script src="scripts/controllers/posts.js"></script>
+	<script src="scripts/controllers/postview.js"></script>
+	<script src="scripts/controllers/nav.js"></script>
+	<script src="scripts/controllers/auth.js"></script>
+	 
+	<!-- // <script src="scripts/controllers/profile.js"></script> -->
+	<script src="scripts/services/post.js"></script>
+	<script src="scripts/services/auth.js"></script>
+	<!-- // <script src="scripts/services/profile.js"></script> -->
+	<script src="scripts/filters/url.js"></script>
+	
+	<!-- End JS -->
+
+</body>
+</html>
