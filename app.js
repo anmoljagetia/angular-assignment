@@ -1,11 +1,4 @@
-import SimpleHTTPServer
-import SocketServer
-
-PORT = 8000
-
-Handler = SimpleHTTPServer.SimpleHTTPRequestHandler
-
-httpd = SocketServer.TCPServer(("", PORT), Handler)
-
-print "serving at port", PORT
-httpd.serve_forever()
+var express = require('express');
+var app = express();
+app.use(express.static(__dirname));
+app.listen(process.env.PORT || 3000);
