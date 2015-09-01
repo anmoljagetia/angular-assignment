@@ -100,3 +100,73 @@ h2 {
   color:#bbb;
 }
 
+/*Panel Enhancements*/
+
+.panel-default>.panel-top>a, .panel-default>.panel-top {
+	background-color: #34495E;
+	color: #fff;
+}
+
+.panel-default>.panel-top>a:hover {
+	color: #1abc9c;
+}
+
+.panel {
+	top: 10px;
+	left: 0;
+	right: 0;
+	margin: 10px auto;
+	width: 75%;
+}
+
+.postCommentButton {
+	margin: -10%;
+	padding-bottom: 10%;
+	top: 10%;
+	margin-top: 10px;
+}
+
+.gravatar {
+	left: 33%;
+}
+
+.profileName {
+	right: 33%;
+	margin-left: 20%;
+	font-weight: 300;
+	font-size: 2em;
+	font-style: "Lato", sans-serif;
+}
+
+.profileElement {
+	margin-top: 50px;
+}
+
+.postTop {
+	font-weight: 300;
+	font-size: 1.5em;
+}
+
+.postBottom {
+	height: 40%;
+	margin-bottom: 20%;
+}
+
+.backToPosts {
+	margin-top: 80px;
+	left: 10%;
+	position: absolute;
+	/* bottom: 217px; */;
+}
+
+.commentForm {
+	width: 75%; 
+	left: 0;
+	right: 0; 
+	margin: auto;
+}
+
+#mainNewsFeedPostHeader {
+  font-size: 1.5em;
+  font-weight: 300;
+}
