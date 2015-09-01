@@ -1,9 +1,24 @@
+/*Generic*/
 body {
   background: #F3F3F3;
 }
 
+h2 {
+  font-weight: 300;
+}
+
+.btn {
+  text-transform: uppercase;
+}
 
 /* NAV BAR */
+
+.navSideElements {
+  text-transform: uppercase;
+  line-height: 200%;
+  font-weight: 300;
+}
+
 .nav-pic {
   margin: -2px 5px 0 0;
   max-height: 20px;
@@ -11,7 +26,6 @@ body {
   -moz-border-radius: 100px;
   border-radius: 100px;
 }
-
 
 /* MAIN POSTS PAGE */
 .post {
