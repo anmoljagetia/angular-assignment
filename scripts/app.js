@@ -1,12 +1,5 @@
 var app = angular
-	.module('angNewsApp', [
-		'ngCookies',
-		'ngResource',
-		'ngRoute',
-		'ngSanitize',
-		'firebase'
-		])
-
+	.module('angNewsApp', ['ngCookies', 'ngResource', 'ngRoute', 'ngSanitize', 'firebase'])
 	.config(function ($routeProvider) {
 		$routeProvider
 		.when('/', {
@@ -34,6 +27,10 @@ var app = angular
 					return Auth.resolveUser();
 				}
 			}
+		})
+		.when('/users/:userID', {
+			templateUrl: 'views/profile.html',
+			controller: 'ProfileCtrl'
 		})
 		.otherwise({
 			redirectTo : '/'

@@ -1,6 +1,6 @@
 'use strict';
 
-app.controller('PostViewCtrl', function ($scope, $routeParams, Post) {
+app.controller('PostViewCtrl', function ($scope, $routeParams, Post, Auth) {
 	$scope.post = Post.get($routeParams.postID);
 	$scope.comments = Post.comments($routeParams.postID);
 
@@ -18,5 +18,9 @@ app.controller('PostViewCtrl', function ($scope, $routeParams, Post) {
 		};
 		$scope.comments.$add(comment);
 		$scope.commentText = '';
+	};
+
+	$scope.deleteComment = function (comment) {
+		$scope.comments.$remove(comment);
 	};
 });
