@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/flat-ui/2.2.2/css/flat-ui.min.css">
+	<link href='https://fonts.googleapis.com/css?family=Lato:400,300,700' rel='stylesheet' type='text/css'>
+	<link rel="stylesheet" href="styles/landing.css">
+	<script src="scripts/covervid.js"></script>
+	<title>Welcome to talk!</title>
+</head>
+
+<body>
+	<div class="covervid-wrapper">
+		<video class="masthead-video" autoplay loop poster="images/background.png">
+			<source src="videos/demo.webm" type="video/webm">
+			<source src="videos/demo.mp4" type="video/mp4">
+		</video>
+		<div id="overlay"></div>
+	</div>
+
+	<object type="image/svg+xml" data="images/logo.svg" style="z-index: 120" id="logo">Your browser does not support SVG</object>
+	<br />
+	<p style="z-index:100;">Social Network for everyone.</p>
+	<div id="buttonContainer">
+		<a class="button button-1 button-1a" style="z-index:130;" href="../#/login">Login</a>
+		<a class="button button-1 button-1a" style="z-index:130;" href="../#/register">Register</a>
+	</div>
+	<script type="text/javascript">
+		var vidElement = document.querySelector(".masthead-video");
+		coverVid(vidElement, 1920, 1080);
+	</script>
+</body>
+</html>
